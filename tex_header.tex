@@ -1,0 +1,49 @@
+% -------------- This is a.tex file which can be opened in any tex editor
+% -------------- A two sided document for student note taking with optional table of contents
+% -------------- Margin for adding things like important notes/definitions etc
+
+\documentclass[10pt,a4paper,twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{tcolorbox}
+\usepackage{multicol}
+\usepackage{hyperref} %required for table of contents
+\usepackage{graphicx}
+\usepackage[top=1cm,left=1cm,width = 14cm]{geometry}
+\author{Author Title}
+\title{\textbf{Subject:} }
+
+\begin{document}
+% -------------- \tableofcontents 
+\maketitle{} \marginparwidth=4.5cm 
+
+\begin{tcolorbox}\textbf{Learning Objectives}
+\begin{itemize}
+\item Objective 1
+\item Objective 2
+\item Objective 3
+\end{itemize}
+\end{tcolorbox}
+
+\section{First Section}
+
+\marginpar{\vspace{-4em}We can write our important notes here. Alter `-4em' to change the height of the note}
+
+\subsection{Subsection}
+\subsection{Subsection}
+
+\section{Second Section}
+
+\subsection{Subsection}
+\subsection{Subsection}
+
+\section{Third Section}
+
+\subsection{Subsection}
+\subsection{Subsection}
+
+\section{Fourth Section}
+\end{document}
+
